@@ -1,43 +1,53 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="description" content="" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta name="description" content="" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:alt" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:alt" content="" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="icon.png" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#1e1e2e" />
-  </head>
+        <link rel="manifest" href="site.webmanifest" />
+        <meta name="theme-color" content="#1e1e2e" />
+    </head>
 
-  <body>
-    <p>Felix är pantad</p>
-    <div class="findgame_div" id="findgame_div">
-      <!--  TODO: Format -->
-      <input
-        type="text"
-        name="code"
-        value="Enter join code here"
-        class="joinbox"
-        placeholder="Write code here"
-        id="joinbox"
-      />
-      <button class="findgame" id="findgame" onclick="alert('I am a button')">
-        Find Game
-      </button>
-    </div>
-    <script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  </body>
+    <body>
+        <div class="findgame_div" id="findgame_div">
+            <!--  TODO: Format -->
+            <input
+                type="text"
+                name="code"
+                class="joinbox"
+                placeholder="Write code here"
+                id="joinbox"
+            />
+            <button
+                class="findgame"
+                id="findgame"
+                onclick="alert('Find a game!')"
+            >
+                Find Game
+            </button>
+            <p class="gameselectdiv"">or</p>
+            <button
+                class="creategame"
+                id="creategame"
+                onclick="alert('Create a game!')"
+            >
+                Create Game
+            </button>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </body>
 </html>
