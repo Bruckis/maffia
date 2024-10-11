@@ -15,20 +15,25 @@ html {
   color: #cdd6f4;
 }
 
+main {
+  margin-top: 10em;
+}
+
 .findgame_div {
   display: grid;
+  place-items: center;
   grid-auto-rows: max-content;
   row-gap: 0;
   height: 600px;
 }
 
-.joinbox {
+.username, .joinbox {
   width: 60%;
   height: 40px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-bottom: 0.3em;
   align-items: center;
   background: #181825;
   border: 2px solid #11111b;

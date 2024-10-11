@@ -18,26 +18,35 @@ html {
     color: base.$text;
 }
 
+main {
+    margin-top: 10em;
+}
+
 .findgame_div {
     display: grid;
+    place-items: center;
     grid-auto-rows: max-content;
     row-gap: 0;
     height: 600px;
 }
 
-.joinbox {
+.username {
     width: 60%;
     height: 40px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-bottom: 0.3em;
     align-items: center;
     background: base.$mantle;
     border: 2px solid base.$crust;
     border-radius: 15px;
     color: base.$text;
     text-align: center;
+}
+
+.joinbox {
+    @extend .username;
 }
 
 .findgame {
